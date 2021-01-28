@@ -1,0 +1,14 @@
+digraph test {
+    a [label="Acquire Data"] 
+    b [label="Clean and format"]
+    c [label="Modelling"]
+    d [label="Evaluation"] [shape="signature"]
+    x [label="Business case 
+    or 
+    Hypothesis"] [shape="note"]
+    y [label="Deployment"] [shape="box3d"]
+
+    x->a->b->c->d [color="green"]
+    d->a [color="red"]
+    d->y [color="blue"]
+}
